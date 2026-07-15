@@ -9,19 +9,22 @@
     </div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>د. عمرو حسين كيكي | استشاري جراحات العظام</title>
+    <title>د. عمرو حسين الكيكي | استشاري جراحات العظام</title>
     <!-- أيقونة الموقع (Favicon) -->
-<link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
 
-<!-- وصف الموقع لمحركات البحث -->
-<meta name="description" content="العيادة الرسمية للدكتور عمرو حسين كيكي، استشاري جراحات العظام والكسور والإصابات، ومناظير المفاصل. زميل جامعة آخين ومستشفيات ميونيخ بألمانيا.">
-<!-- الكلمات المفتاحية -->
-<meta name="keywords" content="دكتور عظام, جراحة العظام, دكتور عظام بالاسكندرية, استشاري عظام, مناظير المفاصل, جراحة اليد, جراحة الكتف, الركبة, دكتور عمرو كيكي, سابا باشا, عيادة عظام">
+    <!-- وصف الموقع لمحركات البحث -->
+    <meta name="description" content="العيادة الرسمية للدكتور عمرو حسين كيكي، استشاري جراحات العظام والكسور والإصابات، ومناظير المفاصل. زميل مستشفيات ميونيخ بألمانيا.">
+    <!-- الكلمات المفتاحية -->
+    <meta name="keywords" content="دكتور عظام, جراحة العظام, دكتور عظام بالاسكندرية, استشاري عظام, مناظير المفاصل, جراحة اليد, جراحة الكتف, الركبة, دكتور عمرو كيكي, سابا باشا, عيادة عظام">
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- تنسيقات الشاشة الأولى الجديدة (V2) -->
+
 </head>
 <body>
     <div id="progressBar"></div>
@@ -30,77 +33,85 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1 data-aos="fade-down" data-aos-duration="1000">رعاية طبية متكاملة في <span class="highlight">جراحات العظام والمفاصل</span></h1>
-            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">استشاري جراحات العظام والكسور، وزميل المستشفيات الألمانية، لتقديم أفضل مستوى من الرعاية لمرضانا.</p>
-            <a href="#contact" class="btn glow-btn" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">احجز كشفك الآن</a>
-        </div>
-        <div class="hero-bg-shapes"></div>
-    </section>
-<!-- Custom Cursor -->
- <div class="custom-cursor"></div>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
 
- <!-- Dark Mode Toggle Button -->
- <button id="darkModeToggle" class="dark-mode-btn">
-     <i class="fas fa-moon"></i>
- </button>
-<!-- Infinite Marquee -->
+    <!-- Dark Mode Toggle Button -->
+    <button id="darkModeToggle" class="dark-mode-btn">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <!-- Hero Section (النسخة الفخمة الجديدة) -->
+   <section class="hero" style="background: linear-gradient(rgba(24, 43, 73, 0.95), rgba(11, 21, 38, 0.98)), url('assets/logo.jpg') center/cover fixed no-repeat; min-height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+        <div id="particles-js"></div> <!-- خلفية الجزيئات -->
+        
+        <div class="hero-container">
+            <!-- الجزء الخاص بالنص واللوجو -->
+            <div class="hero-text-side" data-aos="fade-left" data-aos-duration="1000">
+                <img src="assets/logo.jpg" alt="لوجو العيادة" class="top-logo">
+                <h1>دكتور <span class="highlight">عمرو الكيكي</span></h1>
+                
+                <h3 style="margin-bottom: 20px; font-weight: normal; color: #c49a45; font-size: 1.5rem;">
+                    <span class="highlight typed-text"></span><span class="cursor">&nbsp;</span>
+                </h3>
+                
+                <p style="font-size: 1.15rem; line-height: 1.9; margin-bottom: 35px; color: #ddd;">
+                    استشاري جراحات العظام و الكسور و الإصابات<br>
+                    استشاري جراحات اليد و الرسغ و الكوع و الكتف و جراحات و مناظير المفاصل<br>
+                    زميل مستشفيات هليوس بيرلاخ - ميونيخ - المانيا
+                </p>
+                <a href="#contact" class="btn glow-btn">احجز كشفك الآن</a>
+            </div>
+
+            <!-- الجزء الخاص بصورة الدكتور -->
+            <div class="hero-image-side" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
+                <img src="assets/dr_amr.jpg" alt="الدكتور عمرو كيكي" class="dr-hero-img">
+            </div>
+        </div>
+
+        <!-- مؤشر السكرول -->
+        <a href="#about" class="scroll-indicator" style="bottom: 20px;">
+            <div class="mouse"><div class="wheel"></div></div>
+        </a>
+    </section>
+
+    <!-- شريط الأخبار المتحرك -->
     <div class="marquee-wrapper">
         <div class="marquee-content">
             <!-- المجموعة الأولى -->
-            <span>🦴 استشاري جراحات العظام والكسور والإصابات</span>
+            <span>🦴استشاري جراحات اليد و الرسغ و الكوع و الكتف و جراحات و مناظير المفاصل</span>
             <span>⚕️ مناظير اليد والرسغ والكوع والكتف</span>
-            <span>🇩🇪 زميل جامعة آخين - ألمانيا</span>
-            <span>🏥 زميل مستشفيات ميونيخ - ألمانيا</span>
+            <span>زميل مستشفيات هليوس بيرلاخ - ميونيخ - المانيا</span>
             <span>👨‍⚕️ رعاية طبية متطورة</span>
             
-            <!-- المجموعة الثانية (مكررة لضمان استمرار الحركة بدون قطع) -->
-            <span>🦴 استشاري جراحات العظام والكسور والإصابات</span>
+            <!-- المجموعة الثانية -->
+            <span>🦴استشاري جراحات اليد و الرسغ و الكوع و الكتف و جراحات و مناظير المفاصل</span>
             <span>⚕️ مناظير اليد والرسغ والكوع والكتف</span>
-            <span>🇩🇪 زميل جامعة آخين - ألمانيا</span>
-            <span>🏥 زميل مستشفيات ميونيخ - ألمانيا</span>
+            <span>زميل مستشفيات هليوس بيرلاخ - ميونيخ - المانيا</span>
             <span>👨‍⚕️ رعاية طبية متطورة</span>
         </div>
     </div>
- <!-- Hero Section -->
- <section class="hero">
-     <div id="particles-js"></div> <!-- خلفية الجزيئات -->
-     <div class="hero-content">
-         <h1 data-aos="fade-down" data-aos-duration="1000">د. عمرو حسين كيكي<br> 
-             <span class="highlight typed-text">Orthopedic Surgeon</span><span class="cursor">&nbsp;</span>
-         </h1>
-         <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">استشاري جراحات و كسور و مناظير اليد و الرسغ و الكوع و الكتف و جراحات و مناظير المفاصل.</p>
-         <a href="#contact" class="btn glow-btn" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">احجز موعدك الآن</a>
-     </div>
 
-     <!-- مؤشر السكرول -->
-     <a href="#about" class="scroll-indicator">
-         <div class="mouse"><div class="wheel"></div></div>
-     </a>
- </section>
     <section class="about" id="about">
         <div class="about-header" data-aos="zoom-in" data-aos-duration="1000">
-            <img src="assets/dr_amr.jpg" alt="الدكتور عمرو كيكي" class="dr-image">
             <h2>نبذة عن الطبيب</h2>
         </div>
         <div class="about-grid">
             <div class="about-card glass-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                 <i class="fas fa-bone"></i>
-                <p>استشاري جراحات العظام و الكسور و الإصابات، بخبرة واسعة في التعامل مع مختلف الحالات المعقدة.</p>
+                <p>استشاري جراحات العظام و الكسور و الإصابات، بخبرة واسعة في التعامل مع مختلف الحالات الحرجة.</p>
             </div>
             <div class="about-card glass-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                 <i class="fas fa-hand-paper"></i>
-                <p>استشاري جراحات و كسور و مناظير اليد و الرسغ و الكوع و الكتف و جراحات و مناظير المفاصل.</p>
+                <p>استشاري جراحات اليد و الرسغ و الكوع و الكتف و جراحات و مناظير المفاصل.</p>
             </div>
             <div class="about-card glass-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                 <i class="fas fa-globe-europe"></i>
-                <p>زميل جامعة آخين بألمانيا، وزميل مستشفيات Helios Klinikum München Perlach بمدينة ميونيخ.</p>
+                <p>زميل مستشفيات هليوس بيرلاخ - ميونيخ - ألمانيا.</p>
             </div>
         </div>
     </section>
 
-    <!-- قمت بتعديل الإحصائيات لتناسب المجال الطبي -->
     <section class="stats" id="stats" data-aos="fade-up" data-aos-duration="1000">
         <div class="stats-container">
             <div class="stat-box">
@@ -125,7 +136,6 @@
     <section class="locations" id="locations">
         <h2 data-aos="zoom-in" data-aos-duration="1000">موقع العيادة</h2>
         <div class="locations-grid" style="display: flex; justify-content: center;">
-            <!-- تم دمج كل السناتر في كارت واحد مخصص للعيادة -->
             <div class="location-card glass-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-aos="fade-up" style="max-width: 600px; width: 100%;">
                 <i class="fas fa-map-marker-alt" style="font-size: 2rem; margin-bottom: 15px;"></i>
                 <h3>عيادة سابا باشا - الإسكندرية</h3>
@@ -141,7 +151,8 @@
             </div>
         </div>
     </section>
-<!-- Social Media Section -->
+
+    <!-- Social Media Section -->
     <section class="social" data-aos="zoom-in" data-aos-duration="1000">
         <h3>تابعنا على وسائل التواصل الاجتماعي</h3>
         <div class="social-icons">
